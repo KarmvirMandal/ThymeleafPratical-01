@@ -1,0 +1,26 @@
+ <!doctype html>
+ <html lang="en" xmlns:th="http://www.thymeleaf.org">
+ <head>
+ 	<meta charset="UTF-8" />
+ 	<title>Document</title>
+ </head>
+ <body>
+ 
+ <h1>I am using template  </h1>
+ <h1 th:text="${name}"></h1>
+ 
+ <!-- String Upercase function using thymeleaf -->
+ 
+ <h1 th:text="${ #strings.toUpperCase(name)}"></h1>
+ <h2 th:text="${currentDate}"></h2>
+ 
+ <h1> name of the owner <span th:text="${name}"></span></h1>
+ 
+ <div th:with="a=4, b=5, n=${name}">
+ 
+   <h1> value of a is <span th:text="${a}"></span></h1>
+ 
+ </div>
+ 	
+ </body>
+ </html>
